@@ -1,0 +1,201 @@
+@import "config.css";
+
+/* Header / face of the website */
+nav{
+    display: none;
+}
+.full-screen-banner{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.full-screen-banner .image-holder{
+    filter: grayscale(100%) brightness(60%);
+    width: 100%;
+    height: 100%;
+    background-image: url('../res/full-size-banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.text-holder{
+    color: #fff;
+    font-weight: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%,-50%)
+}
+.highlight-patd{
+    font-weight: 900;
+    color: var(--accent-color)
+}
+.text-holder p{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.drawer-container{
+    position: fixed;
+    display: flex;
+    max-width: 10%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    z-index: 1;
+    margin-top:1rem;
+    border-radius: 0 25px 25px 0;
+    border: 2px solid var(--font-color);
+    border-left: none;
+    background-color: var(--font-color-op8)
+}
+.mobile-nav{
+    display:flex;  
+    flex:1 1 300px; 
+    overflow: hidden;
+}
+.mobile-nav a{
+    color: var(--dark-color);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: auto 1rem;
+}
+.drawer-handle{
+    color: var(--dark-color);
+    font-size: 3rem;
+    flex: 1;
+    margin: 10px;
+    cursor: pointer;
+}
+.scroll-down{
+    position: absolute;
+    z-index: 1;
+    top: 70%;
+    left: 50%;
+    color: var(--dark-color);
+    font-weight: 900;
+    transform: rotateZ(270deg) translate(-50%,-50%);
+    font-size: 2rem;
+    padding: .8rem 1rem;
+    border-radius: 50%;
+    background-color: var(--font-color-op5);
+}   
+.scroll-down:hover{
+    cursor: pointer;
+    background-color: var(--font-color-op8);
+    transition: 300ms ease-in-out;
+}
+
+.contents{
+    display: flex;
+    flex-direction: column;
+}
+.contents .child-content{
+    margin-top: 3rem;
+}
+/* Content 1: Discovery */
+ .discovery-container{
+     background: var(--background-color);
+     padding: 2rem;
+     color: var(--dark-color);
+}
+.discovery-container h2{
+    margin: 2rem auto;
+}
+.discovery-container p {
+    font-size: clamp(.7rem,1.8vw,1.2rem);
+}
+/* albums */
+.albums-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 20%;
+    width: 100%;
+}
+.album{
+    width: 100%;
+    max-height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: var(--dark-color);
+    color: var(--font-color);
+    margin: .5rem;
+    border-radius: 10px;
+    font-size: clamp(.7rem,1.8vw,1.2rem);
+}
+.album h4, .album p{
+    margin: 1rem;
+}
+.album h4{
+    flex: 1 1 50px;
+}
+.album p{
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    display: -webkit-box;    
+}
+.album img{
+    max-width:80px;
+    margin: .3rem;
+    border-radius: 50px;
+}
+
+
+@media screen and (max-width: 325px){
+    .mobile-nav a{
+        font-size: .8rem;
+        margin: auto .5rem;
+    }  
+    .drawer-handle{
+        margin: 5px;
+    }
+    .album{
+        max-height: 200px;
+        flex-direction: column;
+        padding: .5rem;
+    }   
+    .album img,
+    .album h4,
+    .album p{
+        margin: 1rem auto 0 auto;
+    }
+    .album h4{
+        font-size: .7rem;   
+        text-align: center;
+    }
+    .album p{
+        font-size: .7rem;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 590px){
+    .drawer-container{
+        display: none;
+    }
+    .desktop-nav-container{
+        position: fixed;
+        z-index: 1;
+        display: flex;
+        float: right;
+        background-color: var(--font-color-op8);
+        border-radius: 0 0 25px 0;
+    }
+    .desktop-nav{
+        display: flex;
+    }
+    .desktop-nav a{
+        font-weight: 900;
+        color: var(--dark-color);
+        text-decoration: none;
+        margin: 1rem;
+    }
+    .discovery-container {
+        padding: 10vh 20vw;
+    }
+}

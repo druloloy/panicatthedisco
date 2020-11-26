@@ -1,0 +1,47 @@
+[
+   {
+      "id":1,
+      "title": "Pray for the Wicked",
+      "album art": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/PATD_PFTW.jpg/220px-PATD_PFTW.jpg",
+      "year released": "2018",
+      "artist": "Panic! At The Disco",
+      "tracks": [
+         {
+            "song": "(Fuck A) Silver Lining",
+            "duration" : "2:48"
+         },
+         {
+            "song": "Say Amen(Saturday Night)",
+            "duration" : "3:09"
+         },
+         {
+            "song": "Hey Look Ma, I Made It",
+            "duration" : "2:49"
+         }
+      ] 
+   },
+   {
+      "id":2,
+       "title": "Death of a Bachelor",
+       "album art": "https://upload.wikimedia.org/wikipedia/en/e/e4/Death_of_a_Bachelor.jpg",
+       "year released": "2016",
+       "artist": "Panic! At The Disco",
+       "tracks": [] 
+   },
+   {
+      "id":3,
+       "title": "Too Weird to Live, Too Rare to Die",
+       "album art": "https://upload.wikimedia.org/wikipedia/en/f/fc/Too_Weird_to_Live%2C_Too_Rare_to_Die%21.jpg",
+       "year released": "2013",
+       "artist": "Panic! At The Disco",
+       "tracks": [] 
+    },
+   {
+      "id":4,
+       "title": "Vice and Virtues",
+       "album art": "https://upload.wikimedia.org/wikipedia/en/f/fc/Too_Weird_to_Live%2C_Too_Rare_to_Die%21.jpg",
+       "year released": "2011",
+       "artist": "Panic! At The Disco",
+       "tracks": [] 
+    }
+]
