@@ -1,0 +1,43 @@
+[
+    {
+        "tour": "Pray for the Wicked Tour",
+        "date": "July 11",
+        "weekday": "Wed",
+        "state": "Minneapolis, MN",
+        "country": "United States",
+        "venue": "Target center"
+    },
+    {
+        "tour": "Pray for the Wicked Tour",
+        "date": "July 13",
+        "weekday": "Fri",
+        "state": "Indianapolis, IN",
+        "country": "United States",
+        "venue" : "Bankers Life Fieldhouse"
+    },
+    {
+        "tour": "Pray for the Wicked Tour",
+        "date": "July 14",
+        "weekday": "Sat",
+        "state": "Detroit, MI",
+        "country": "United States",
+        "venue": "Little Caesars Arena"
+    },
+    {
+        "tour": "Pray for the Wicked Tour",
+        "date": "July 15",
+        "weekday": "Sun",
+        "state": "Colombus, OH",
+        "country": "United States",
+        "venue": "Nationwide Arena"
+    },
+    {
+        "tour": "Pray for the Wicked Tour",
+        "date": "July 17",
+        "weekday": "Tue",
+        "state": "Chicago, IL",
+        "country": "United States",
+        "venue": "United Center"
+    }
+    
+]
